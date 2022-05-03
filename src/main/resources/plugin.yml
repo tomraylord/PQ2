@@ -1,0 +1,6 @@
+name: PablosQuarry2
+version: '${project.version}'
+main: org.shmurda.pq2.PQMain
+api-version: 1.18
+authors: [tomraylord, EthanHoward]
+website: https://www.shmurda.org
