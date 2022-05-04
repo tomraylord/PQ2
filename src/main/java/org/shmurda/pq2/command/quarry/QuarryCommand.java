@@ -8,10 +8,7 @@ import org.shmurda.pq2.PQMain;
 import org.shmurda.pq2.command.quarry.subcommands.QuarryHelpSubCmd;
 import org.shmurda.pq2.util.SubCmd;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class QuarryCommand extends Command {
 
@@ -20,6 +17,9 @@ public class QuarryCommand extends Command {
 
     public QuarryCommand(PQMain main) {
         super("quarry");
+
+        List<String> aliases = new ArrayList<>(List.of("pq2", "pq", "q", "pablosquarry2", "pablosquarry", "pabloquarry", "pabloquarry2"));
+        setAliases(aliases);
 
         this.main = main;
 
